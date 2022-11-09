@@ -17,6 +17,9 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
+import { ConsoEnergieRegionsComponent } from './Components/conso-energie-regions/conso-energie-regions.component';
+import {MatButtonModule} from "@angular/material/button";
+import { TypeEnergieRegionsComponent } from './Components/type-energie-regions/type-energie-regions.component';
 
 
 @NgModule({
@@ -26,6 +29,8 @@ import {MatNativeDateModule} from "@angular/material/core";
     RegionComponent,
     VilleComponent,
     ComparatifComponent,
+    ConsoEnergieRegionsComponent,
+    TypeEnergieRegionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import {MatNativeDateModule} from "@angular/material/core";
     ReactiveFormsModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatButtonModule
   ],
   providers: [
     {provide: NgChartsConfiguration, useValue: {generateColors: false}},

@@ -4,6 +4,10 @@
 
 .container {
   padding: 10px 100px;
-  border: rebeccapurple 2px solid;
-  display: flex;
+  border: $border-test;
+
+  .wrp{
+    display: flex;
+  }
 }
+

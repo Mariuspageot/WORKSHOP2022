@@ -9,5 +9,20 @@
   .filter-card{
     margin-bottom: $spacing-small;
   }
+}
+
+.wrp{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.graph-conso-region{
+  border: $border-test;
 
 }
