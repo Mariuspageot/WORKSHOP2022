@@ -1,0 +1,12 @@
+@import
+'src/styles/variables',
+'src/styles/components/comparatif';
+
+.container {
+  padding: 10px 100px;
+
+  .wrp{
+    display: flex;
+  }
+}
+

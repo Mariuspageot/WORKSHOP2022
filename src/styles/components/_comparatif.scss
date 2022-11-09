@@ -1,0 +1,39 @@
+.filters{
+  width: 30%;
+
+  .filter-title{
+    display: block;
+    margin-bottom: $spacing-small;
+  }
+
+  .filter-card{
+    margin-bottom: $spacing-small;
+  }
+}
+
+.wrp{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.content{
+  width: 60%;
+}
+
+.graph-conso-region{
+  display: flex;
+  flex-direction: column;
+  padding-top: $spacing-large;
+
+  .type-energie-regions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .chart {
+      margin: $spacing-medium 0;
+      width: 48%;
+    }
+  }
+}
