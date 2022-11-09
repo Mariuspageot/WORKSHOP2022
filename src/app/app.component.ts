@@ -10,7 +10,4 @@ import {Router} from "@angular/router";
 export class AppComponent {
   title = 'WORKSHOP2022';
 
-  goHome() {
-
-  }
 }

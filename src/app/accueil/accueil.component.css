@@ -1,0 +1,25 @@
+.flex{
+  display: flex;
+}
+
+.column{
+  flex-direction: row;
+}
+
+.row{
+  flex-direction: column;
+}
+.example-card {
+  min-width: 300px;
+  height: 200px;
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+svg g path:hover{
+  fill:#CFEFDC;
+}
+
+.charts{
+  margin: 20px;
+}

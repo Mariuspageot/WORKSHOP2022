@@ -21,6 +21,7 @@ import { ConsoEnergieRegionsComponent } from './Components/conso-energie-regions
 import {MatButtonModule} from "@angular/material/button";
 import { TypeEnergieRegionsComponent } from './Components/type-energie-regions/type-energie-regions.component';
 
+import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TypeEnergieRegionsComponent } from './Components/type-energie-regions/t
     RegionComponent,
     VilleComponent,
     ComparatifComponent,
+    MyAreaChartComponent,
     ConsoEnergieRegionsComponent,
     TypeEnergieRegionsComponent,
   ],
