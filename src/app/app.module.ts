@@ -11,6 +11,13 @@ import { RouterModule } from '@angular/router';
 import { RegionComponent } from './region/region.component';
 import { VilleComponent } from './ville/ville.component';
 import { ComparatifComponent } from './comparatif/comparatif.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatSelectModule} from "@angular/material/select";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+
 
 @NgModule({
   declarations: [
@@ -33,9 +40,16 @@ import { ComparatifComponent } from './comparatif/comparatif.component';
       {path: 'ville', component: VilleComponent},
       {path: 'comparatif', component: ComparatifComponent},
     ]),
+    MatCardModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [
-    {provide: NgChartsConfiguration, useValue: {generateColors: false}}
+    {provide: NgChartsConfiguration, useValue: {generateColors: false}},
+    MatDatepickerModule,
   ],
   bootstrap: [AppComponent]
 })

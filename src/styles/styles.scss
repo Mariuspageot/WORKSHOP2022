@@ -1,0 +1,9 @@
+@import
+'src/styles/variables',
+'src/styles/components/comparatif';
+
+.container {
+  padding: 10px 100px;
+  border: rebeccapurple 2px solid;
+  display: flex;
+}

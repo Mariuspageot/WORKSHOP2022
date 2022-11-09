@@ -1,1 +1,37 @@
-<p>comparatif works!</p>
+<div class="container">
+  <h1>Comparatif des régions</h1>
+  <div class="filters">
+    <mat-card class="filter-card">
+      <span class="filter-title">Filtrer par régions</span>
+      <mat-form-field appearance="fill">
+        <mat-label>Liste des régions</mat-label>
+        <mat-select [formControl]="regions" multiple>
+          <mat-option *ngFor="let region of listRegions" [value]="region">{{region}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card>
+    <mat-card class="filter-card">
+      <span class="filter-title">Filtrer par dates</span>
+      <mat-form-field appearance="fill">
+        <mat-label>Date de début</mat-label>
+        <input matInput [matDatepicker]="pickerDebut">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="pickerDebut"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDebut></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Date de fin</mat-label>
+        <input matInput [matDatepicker]="pickerFin">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="pickerFin"></mat-datepicker-toggle>
+        <mat-datepicker #pickerFin></mat-datepicker>
+      </mat-form-field>
+
+    </mat-card>
+  </div>
+  <div class="content">
+  <div class="graph-conso-region">
+
+  </div>
+  </div>
+</div>
