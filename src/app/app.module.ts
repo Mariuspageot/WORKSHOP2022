@@ -6,15 +6,19 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {MatOptionModule, MatRippleModule} from "@angular/material/core";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatInputModule} from "@angular/material/input";
-import {MatButtonModule} from "@angular/material/button";
+import { AccueilComponent } from './accueil/accueil.component';
+import { RouterModule } from '@angular/router';
+import { RegionComponent } from './region/region.component';
+import { VilleComponent } from './ville/ville.component';
+import { ComparatifComponent } from './comparatif/comparatif.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AccueilComponent,
+    RegionComponent,
+    VilleComponent,
+    ComparatifComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +26,13 @@ import {MatButtonModule} from "@angular/material/button";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: '', component: AccueilComponent},
+      {path: 'region', component: RegionComponent},
+      {path: 'ville', component: VilleComponent},
+      {path: 'comparatif', component: ComparatifComponent},
+    ]),
   ],
   providers: [
     {provide: NgChartsConfiguration, useValue: {generateColors: false}}

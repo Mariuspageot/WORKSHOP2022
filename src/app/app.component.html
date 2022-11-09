@@ -1,13 +1,14 @@
 <p>
   <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button mat-icon-button routerLink="/" class="example-icon" aria-label="Example icon-button with menu icon">
       <img src="assets/Logo.png" class="Logo">
     </button>
     <span>Stat Energie</span>
     <span class="example-spacer"></span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button routerLink="/comparatif" class="example-icon" aria-label="Example icon-button with share icon">
       Voir les comparatifs
     </button>
   </mat-toolbar>
+  <router-outlet></router-outlet>
 </p>
