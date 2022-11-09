@@ -6,11 +6,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
-import { AccueilComponent } from './accueil/accueil.component';
-import { RouterModule } from '@angular/router';
-import { RegionComponent } from './region/region.component';
-import { VilleComponent } from './ville/ville.component';
-import { ComparatifComponent } from './comparatif/comparatif.component';
+import {AccueilComponent} from './accueil/accueil.component';
+import {RouterModule} from '@angular/router';
+import {RegionComponent} from './region/region.component';
+import {VilleComponent} from './ville/ville.component';
+import {ComparatifComponent} from './comparatif/comparatif.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from '@angular/material/button';
+import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { ComparatifComponent } from './comparatif/comparatif.component';
     RegionComponent,
     VilleComponent,
     ComparatifComponent,
+    MyAreaChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,8 @@ import { ComparatifComponent } from './comparatif/comparatif.component';
     MatToolbarModule,
     MatIconModule,
     BrowserModule,
+    MatCardModule,
+    MatButtonModule,
     RouterModule.forRoot([
       {path: '', component: AccueilComponent},
       {path: 'region', component: RegionComponent},
