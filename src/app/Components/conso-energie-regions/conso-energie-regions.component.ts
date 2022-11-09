@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {ChartConfiguration, ChartEvent, ChartType} from 'chart.js';
+import {ChartConfiguration, ChartType} from 'chart.js';
 import {BaseChartDirective} from 'ng2-charts';
 import DataLabelsPlugin from 'chartjs-plugin-datalabels';
 
@@ -32,6 +32,10 @@ export class ConsoEnergieRegionsComponent implements OnInit {
       datalabels: {
         anchor: 'end',
         align: 'end'
+      },
+      title:{
+        display: true,
+        text: "Consommation des deux régions par année"
       }
     }
   };
@@ -57,28 +61,4 @@ export class ConsoEnergieRegionsComponent implements OnInit {
       }
     ]
   };
-
-  // events
-  public chartClicked({event, active}: { event?: ChartEvent, active?: {}[] }): void {
-    console.log(event, active);
-  }
-
-  public chartHovered({event, active}: { event?: ChartEvent, active?: {}[] }): void {
-    console.log(event, active);
-  }
-
-  public randomize(): void {
-    // Only Change 3 values
-    this.barChartData.datasets[0].data = [
-      Math.round(Math.random() * 100),
-      59,
-      80,
-      Math.round(Math.random() * 100),
-      56,
-      Math.round(Math.random() * 100),
-      40];
-
-    this.chart?.update();
-  }
-
 }

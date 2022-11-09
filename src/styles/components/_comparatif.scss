@@ -17,12 +17,23 @@
   max-width: 100%;
 }
 .content{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 
 .graph-conso-region{
-  border: $border-test;
+  display: flex;
+  flex-direction: column;
+  padding-top: $spacing-large;
 
+  .type-energie-regions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .chart {
+      margin: $spacing-medium 0;
+      width: 48%;
+    }
+  }
 }
