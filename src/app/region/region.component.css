@@ -1,0 +1,68 @@
+.title h1 {
+  margin: 70px;
+  margin-left: 300px;
+  color: #4D5E80;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.conteneur
+{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 200px;
+  margin-left: 200px;
+  flex-wrap: wrap;
+
+}
+
+.Liste_ville {
+  margin: 50px;
+  border-radius: 15px;
+  border: solid 4px #B3DEC1;
+  width: 20%;
+
+}
+.Liste_ville p {
+  color: #4D5E80 ;
+  font-size: 25px;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.information p {
+  color: #4D5E80 ;
+  font-size: 25px;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.card{
+  margin: 50px;
+  border: solid 4px #B3DEC1;
+  border-radius: 15px;
+  height:500px;
+}
+.card information {
+  margin-top: 50px;
+}
+
+.information ul {
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.information mat-card-title{
+  color: #4D5E80 ;
+  font-size: 25px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.diagramme_circulaire{
+  margin: 50px;
+  border-radius: 15px;
+  border: solid 4px #B3DEC1;
+  width: 500px;
+  height: 25%;
+}
+

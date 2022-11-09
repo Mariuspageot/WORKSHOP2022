@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { RegionComponent } from './region/region.component';
 import { VilleComponent } from './ville/ville.component';
 import { ComparatifComponent } from './comparatif/comparatif.component';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import { RegionDiagramme1Component } from './region-diagramme1/region-diagramme1.component';
+import { RegionDiagramme2Component } from './region-diagramme2/region-diagramme2.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,8 @@ import { ComparatifComponent } from './comparatif/comparatif.component';
     RegionComponent,
     VilleComponent,
     ComparatifComponent,
+    RegionDiagramme1Component,
+    RegionDiagramme2Component,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,8 @@ import { ComparatifComponent } from './comparatif/comparatif.component';
     MatToolbarModule,
     MatIconModule,
     BrowserModule,
+    MatListModule,
+    MatCardModule,
     RouterModule.forRoot([
       {path: '', component: AccueilComponent},
       {path: 'region', component: RegionComponent},
