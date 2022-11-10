@@ -1,0 +1,20 @@
+<div class="type-energie-regions">
+  <div class="chart">
+    <canvas baseChart
+            [data]="pieChartDataRegion1"
+            [type]="pieChartType"
+            [options]="pieChartOptionsRegion1"
+            [plugins]="pieChartPlugins">
+    </canvas>
+    <button mat-stroked-button routerLink="/region">Voir la région en détail</button>
+  </div>
+  <div class="chart">
+    <canvas baseChart
+            [data]="pieChartDataRegion2"
+            [type]="pieChartType"
+            [options]="pieChartOptionsRegion2"
+            [plugins]="pieChartPlugins">
+    </canvas>
+    <button mat-stroked-button routerLink="/region">Voir la région en détail</button>
+  </div>
+</div>

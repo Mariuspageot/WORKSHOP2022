@@ -11,10 +11,23 @@ import { RouterModule } from '@angular/router';
 import { RegionComponent } from './region/region.component';
 import { VilleComponent } from './ville/ville.component';
 import { ComparatifComponent } from './comparatif/comparatif.component';
+
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { RegionDiagramme1Component } from './region-diagramme1/region-diagramme1.component';
 import { RegionDiagramme2Component } from './region-diagramme2/region-diagramme2.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatSelectModule} from "@angular/material/select";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import { ConsoEnergieRegionsComponent } from './Components/conso-energie-regions/conso-energie-regions.component';
+import {MatButtonModule} from "@angular/material/button";
+import { TypeEnergieRegionsComponent } from './Components/type-energie-regions/type-energie-regions.component';
+
+import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +38,10 @@ import { RegionDiagramme2Component } from './region-diagramme2/region-diagramme2
     ComparatifComponent,
     RegionDiagramme1Component,
     RegionDiagramme2Component,
+    MyAreaChartComponent,
+    ConsoEnergieRegionsComponent,
+    TypeEnergieRegionsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -41,9 +58,17 @@ import { RegionDiagramme2Component } from './region-diagramme2/region-diagramme2
       {path: 'ville', component: VilleComponent},
       {path: 'comparatif', component: ComparatifComponent},
     ]),
+    MatCardModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule
   ],
   providers: [
-    {provide: NgChartsConfiguration, useValue: {generateColors: false}}
+    {provide: NgChartsConfiguration, useValue: {generateColors: false}},
+    MatDatepickerModule,
   ],
   bootstrap: [AppComponent]
 })
