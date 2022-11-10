@@ -1,1 +1,40 @@
-<p>region works!</p>
+<div class="region">
+  <div class = 'title'>
+    <h1>Pays de la Loire</h1>
+  </div>
+  <div class="conteneur">
+    <div class = 'Liste_ville'>
+      <p>Ville</p>
+      <mat-selection-list #ville [multiple]="false">
+        <mat-list-option *ngFor="let ville of typesOfShoes" [value]="ville">
+          {{ville}}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+    <div class='card'>
+      <div class = 'information'>
+        <p>Informations</p>
+        <ul>
+          <li>Nombre d’habitants &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34560</li>
+          <li>Superficie &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32536</li>
+          <li>Foyers avec panneaux solaires &nbsp;&nbsp;&nbsp;12563</li>
+        </ul>
+      </div>
+    </div>
+    <div class="diagramme_circulaire">
+      <div>
+        <div class="chart">
+          <canvas baseChart
+                  [data]="pieChartData"
+                  [type]="pieChartType"
+                  [options]="pieChartOptions"
+                  [plugins]="pieChartPlugins">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <app-region-diagramme1></app-region-diagramme1>
+    <app-region-diagramme2></app-region-diagramme2>
+  </div>
+</div>

@@ -11,6 +11,11 @@ import { RouterModule } from '@angular/router';
 import { RegionComponent } from './region/region.component';
 import { VilleComponent } from './ville/ville.component';
 import { ComparatifComponent } from './comparatif/comparatif.component';
+
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import { RegionDiagramme1Component } from './region-diagramme1/region-diagramme1.component';
+import { RegionDiagramme2Component } from './region-diagramme2/region-diagramme2.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
@@ -23,6 +28,7 @@ import { TypeEnergieRegionsComponent } from './Components/type-energie-regions/t
 
 import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +36,12 @@ import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.comp
     RegionComponent,
     VilleComponent,
     ComparatifComponent,
+    RegionDiagramme1Component,
+    RegionDiagramme2Component,
     MyAreaChartComponent,
     ConsoEnergieRegionsComponent,
     TypeEnergieRegionsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -41,6 +50,8 @@ import { MyAreaChartComponent } from './accueil/my-area-chart/my-area-chart.comp
     MatToolbarModule,
     MatIconModule,
     BrowserModule,
+    MatListModule,
+    MatCardModule,
     RouterModule.forRoot([
       {path: '', component: AccueilComponent},
       {path: 'region', component: RegionComponent},
